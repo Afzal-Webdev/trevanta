@@ -469,6 +469,29 @@ footer {
     border-radius: 50%;
     border: 1px solid var(--primary-color);
     background-color: transparent;
+    transform: height,width;
+}
+.nav-toggle-btn:hover{
+    animation: 1000ms pulsing ease infinite;
+}
+@keyframes pulsing {
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.1);
+    }
+    50%{
+        
+        transform: scale(0.7);
+    }
+
+    75%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 .our-partners {
@@ -507,10 +530,10 @@ footer {
     left: 42%;
 }
 
-.hero-section {
+/* .hero-section {
     height: 792px;
 
-}
+} */
 
 .hero-welcome {
     writing-mode: vertical-rl;
@@ -543,7 +566,7 @@ footer {
     writing-mode: vertical-lr;
     text-orientation: upright;
     padding: 8px 20px 12px 18px;
-    background-color: #228F7D;
+    background-color: var(--primary-color);
     font-family: 'Ubuntu', sans-serif;
     font-size: 25px;
     font-weight: 700;
@@ -558,9 +581,83 @@ footer {
 .hero-wrapper{
     max-height: 477px;
     display: flex;
-    margin-left: 152px;
-    padding-block: 80px 235px;
+    padding-left: 152px;
+    width: 100%;
+   margin-block: 80px 235px;
 }
+
+
+.hero-section{
+    width: 100%;
+    height: 792px;
+   
+}
+
+
+/* Hero Video Setup */
+
+.video-background {
+    /* Used to position the video and content */
+    position: relative;
+    height: 100%;
+
+    
+}
+
+.video-background__inner {
+    /* Positioned at the top left corner */
+    left: 0px;
+    position: absolute;
+    top: 0px;
+
+    /* Take full size */
+    height: 100%;
+    width: 100%;
+
+    /* Hide the scrollbar */
+    overflow: hidden;
+}
+
+.video-background__video {
+    object-fit: cover;
+
+    /* Take full width */
+    height: 100%;
+    max-width: 100vw;
+    width: 100%;
+    opacity: 0.3;
+
+}
+
+.video-background__content {
+    /* Positioned at the top left corner */
+    left: 0px;
+    position: absolute;
+    top: 0px;
+
+    /* Take full size */
+    height: 100%;
+    width: 100%;
+
+    /* Center the content */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+
+
+.underline {
+    position: absolute;
+    height: 2px;
+    background-color: blue;
+    width: 0;
+    transform-origin: left center;
+  }
 
 
 /* ******************************************************** */
@@ -574,7 +671,7 @@ footer {
 }
 
 .flickity-prev-next-button:hover {
-    background: #F90;
+    background: var(--primary-color)
 }
 
 /* arrow color */
