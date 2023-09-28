@@ -224,10 +224,8 @@ section .container {
     gap: 50px;
 }
 
-.about-us-article .link {
+:is(.about-us-article, .hero-section) .link {
     padding: 19px 25px;
-
-
     height: 62px;
     width: 170px;
     border: 2px solid var(--primary-color);
@@ -430,4 +428,173 @@ footer {
 .footer {
     padding-block: 59px 42px;
     border-top: 5px solid #228F7E;
+}
+
+/* Header */
+.header-nav {
+    border-bottom: 5px solid #228F7E;
+    ;
+}
+
+.header-navbar {
+    padding-block: 29px;
+
+}
+
+.header-nav .header-navbar {
+
+    max-width: 1100px;
+    width: 100%;
+    justify-content: space-between;
+    margin-inline: auto;
+}
+
+.header-navbar .social-links {
+    gap: 20px;
+}
+
+.nav-toggle-btn {
+    all: unset;
+}
+
+.nav-toggle-btn {
+
+    /* padding: 16px; */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    max-width: 70px;
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+}
+
+.our-partners {
+    padding-block: 147px 193px;
+    padding-inline: 80px;
+}
+
+.our-partners h2 {
+    margin-bottom: 165px;
+}
+
+.partners-slider {
+    max-width: 789px;
+    width: 100%;
+    height: 381px;
+    overflow-x: hidden;
+}
+
+.partners-intro {
+    background: rgba(3, 0, 0, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    max-width: 744px;
+    height: 233px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* left: -250px; */
+
+    top: 73%;
+    left: 42%;
+}
+
+.hero-section {
+    height: 792px;
+
+}
+
+.hero-welcome {
+    writing-mode: vertical-rl;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 95px;
+    font-weight: 700;
+    line-height: 109px;
+    letter-spacing: 0em;
+    text-align: center;
+    opacity: 0.3;
+}
+
+.hero-main-txt {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+
+    max-width: 827px;
+    width: 100%;
+
+
+}
+
+.v-trevanta {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    padding: 8px 20px 12px 18px;
+    background-color: #228F7D;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    margin-block: 8px 32px;
+
+}
+
+.hero-wrapper{
+    max-height: 477px;
+    display: flex;
+    margin-left: 152px;
+    padding-block: 80px 235px;
+}
+
+
+/* ******************************************************** */
+/* smaller, dark, rounded square */
+.flickity-prev-next-button {
+    width: 52px;
+    height: 52px;
+    border-radius: 5px;
+    background: #000000;
+
+}
+
+.flickity-prev-next-button:hover {
+    background: #F90;
+}
+
+/* arrow color */
+.flickity-prev-next-button .arrow {
+    fill: white;
+}
+
+.flickity-prev-next-button.no-svg {
+    color: white;
+}
+
+/* position outside */
+.flickity-prev-next-button.previous {
+    left: 0;
+    position: absolute;
+    top: calc(50% - 26px);
+}
+
+.flickity-prev-next-button.next {
+    right: 0;
+    position: absolute;
+    top: calc(50% - 26px);
 }
