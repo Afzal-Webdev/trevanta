@@ -56,6 +56,8 @@
                 <video autoplay loop muted="true"
                 preload="metadata" class="video-background__video" src="sample.mp4">...</video>
                 <!-- <iframe class="video-background__video" src="https://archive.org/embed/SampleVideo1280x7201mb" width="640" height="480" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe> -->
+
+               
             </div>
         
             <!-- The content -->
@@ -72,6 +74,10 @@
 
                 </section>
             </div>
+
+            <div class="trevanta-overlay">
+                <h1>Trevanta</h1>
+              </div>
         </div>
         <div class="container d-none">
             <div class="row">
@@ -264,6 +270,32 @@
     <!-- GSAP -->
     <script>
         gsap.registerPlugin(MotionPathPlugin);
+    </script>
+
+    <script>
+        const zoomElement = document.querySelector(".trevanta-overlay");
+let zoom = 1;
+const ZOOM_SPEED = 0.1;
+const Opacity_SPEED = 0.01;
+let opacity = 1;
+
+document.addEventListener("wheel", function (e) {
+  
+  if (e.deltaY > 0) {
+
+    zoomElement.style.transform = `scale(${(zoom += ZOOM_SPEED)})`;
+    opacity -= Opacity_SPEED;
+    zoomElement.style.opacity = opacity;
+    if (opacity >= 0) {
+          document.body.classList.add("disabled");
+        }
+    else{
+        document.body.classList.remove("disabled");
+    }
+
+  } 
+   
+});
     </script>
 </body>
 

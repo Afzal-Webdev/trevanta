@@ -132,12 +132,12 @@ table {
 
 /* -------------------------------------- Generalized ------------------------------------ */
 :root {
-    font-family: 'Ubuntu', sans-serif;
+      font-family: 'Ubuntu', sans-serif;
     --global-bg-color: #121B23;
     --primary-text-color: #FFFFFF;
     --primary-color: #228F7D;
     --off-white: #f4f4f4;
-
+    --primary-font-family : 'Ubuntu', sans-serif;
 }
 
 
@@ -149,7 +149,7 @@ body {
 
 
 h2 {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var( --primary-font-family);
     font-size: 50px;
     font-weight: 700;
     line-height: 57px;
@@ -238,7 +238,7 @@ section .container {
 
     margin-top: 75px;
 
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var( --primary-font-family);
     font-size: 20px;
     font-weight: 700;
     line-height: 23px;
@@ -296,7 +296,7 @@ section .container {
 }
 
 .service-card h3 {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var( --primary-font-family);
     font-size: 28px;
     font-weight: 700;
     line-height: 32px;
@@ -307,7 +307,7 @@ section .container {
 }
 
 .service-card p {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var( --primary-font-family);
 
     font-size: 18px;
     font-weight: 400;
@@ -351,7 +351,7 @@ section .container {
 }
 
 .why-card h3 {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var( --primary-font-family);
     font-size: 30px;
     font-weight: 700;
     line-height: 34px;
@@ -406,7 +406,7 @@ footer {
 
 .footer-nav-links a {
     text-decoration: none;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var( --primary-font-family);
     font-size: 20px;
     font-weight: 500;
     line-height: 23px;
@@ -538,7 +538,7 @@ footer {
 .hero-welcome {
     writing-mode: vertical-rl;
     text-decoration: none;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var( --primary-font-family);
     font-size: 95px;
     font-weight: 700;
     line-height: 109px;
@@ -548,7 +548,7 @@ footer {
 }
 
 .hero-main-txt {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var( --primary-font-family);
     font-size: 50px;
     font-weight: 700;
     line-height: 57px;
@@ -567,7 +567,7 @@ footer {
     text-orientation: upright;
     padding: 8px 20px 12px 18px;
     background-color: var(--primary-color);
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var( --primary-font-family);
     font-size: 25px;
     font-weight: 700;
     line-height: 29px;
@@ -695,3 +695,35 @@ footer {
     position: absolute;
     top: calc(50% - 26px);
 }
+
+/* Zoom in */
+body{
+    position:relative;
+  }
+  .trevanta-overlay {
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    font: 700 12px system-ui;
+    background-color:var(--primary-color)
+    
+  }
+  .trevanta-overlay h1{
+    font-family: var(--primary-font-family);
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: -0.025em;
+    text-align: left;
+    mix-blend-mode: color;
+    
+  }
+  
+  
+  .disabled {
+    overflow-y: hidden;
+  }  
