@@ -16,6 +16,10 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
+       <!-- AOS -->
+
+       <link rel="stylesheet" href="packages/aos.css">
+       <script src="packages/aos.js"></script>
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MotionPathPlugin.min.js"></script>
@@ -39,7 +43,7 @@
                         <img src="images/Trevanta-Logo-2.png" alt="">
                     </div>
 
-                    <button class="nav-toggle-btn">
+                    <button class="nav-toggle-btn" onclick="openNav()">
                         <img src="images/toggle-btn.png" alt="Toggle Menu">
                     </button>
 
@@ -48,6 +52,38 @@
                 </div>
             </div>
         </div>
+
+
+        <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a href="#">Home</a>
+      <a href="#">About us</a>
+      <a href="#">Services</a>
+      <a href="#">Careers</a>
+      <a href="#">Blogs</a>
+      <a href="#">Contact us</a>
+      <!-- <div class="nav-first-svg"></div>
+      <div class="nav-second-svg"></div> -->
+
+    
+    </div>
+   
+      
+
+        
+
+    
+  
+  </div>
+  
+        
+
     </section>
     <section class="hero-section">
         <div class="video-background">
@@ -75,9 +111,9 @@
                 </section>
             </div>
 
-            <div class="trevanta-overlay">
+            <!-- <div class="trevanta-overlay">
                 <h1>Trevanta</h1>
-              </div>
+              </div> -->
         </div>
         <div class="container d-none">
             <div class="row">
@@ -92,8 +128,8 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-4 left-img">
-                    <img src="images/about.png" alt="">
+                <div class="col-4 left-img" data-aos="fade-right">
+                    <img src="images/about.png" alt=""  >
                 </div>
                 <div class="col-6">
                     <h2>ABOUT US</h2>
@@ -112,7 +148,7 @@
                             Our goal is to change how businesses function in the quickly changing digital environment of
                             today.</p>
 
-                        <a href="#" class="link">Learn More</a>
+                        <a href="#" class="link" data-aos="flip-down">Learn More</a>
                     </article>
 
 
@@ -125,7 +161,7 @@
 
         <div class="container">
             <div class="col-md-12">
-                <h2>OUR PROFESSIONAL SERVICES</h2>
+                <h2 data-aos="zoom-in-up">OUR PROFESSIONAL SERVICES</h2>
                 <article class="services-cards d-flex justify-center">
 
                     <div class="service-card">
@@ -167,38 +203,38 @@
         </div>
     </section>
     <section class="why-choose-us">
-        <h2 class="text-center">WHY CHOOSE US</h2>
+        <h2 class="text-center" data-aos="zoom-in-up">WHY CHOOSE US</h2>
 
         <div class="sub-section d-flex justify-content-center">
             <article class="left">
-                <div class="why-card">
+                <div class="why-card" data-aos="fade-up-right">
                     <img src="images/client_centeric.png" alt="Client-Centeric Approach">
                     <h3>Client-centric approach</h3>
                     <p class="card-text">We build lasting partnerships, understanding your business requirements to
                         deliver results aligned with your goals.</p>
                 </div>
-                <div class="why-card">
+                <div class="why-card" data-aos="fade-up-right">
                     <img src="images/customized-solutions.png" alt="Customized solutions">
                     <h3>Customized Solutions</h3>
                     <p class="card-text">Tailored to your needs, our team develops solutions that address your
                         challenges and help you achieve objectives.</p>
                 </div>
             </article>
-            <div class="separation"><img src="images/why-us-separator.png" alt=""></div>
+            <div class="separation" data-aos="flip-up"><img src="images/why-us-separator.png" alt=""></div>
             <article class="right">
-                <div class="why-card">
+                <div class="why-card" data-aos="fade-down-left">
                     <img src="images/experise.png" alt="Expertise">
                     <h3>Expertise</h3>
                     <p class="card-text">Our skilled professionals have industry knowledge and expertise in the latest
                         technologies, providing innovative solutions that adapt to the changing IT landscape.</p>
                 </div>
-                <div class="why-card">
+                <div class="why-card" data-aos="fade-down-left">
                     <img src="images/quality-reliability.png" alt="Quality and Reliability">
                     <h3>Quality and reliability</h3>
                     <p class="card-text">We deliver top-notch, scalable, and secure solutions, exceeding client
                         expectations through rigorous quality assurance processes.</p>
                 </div>
-                <div class="why-card">
+                <div class="why-card" data-aos="fade-down-left">
                     <img src="images/client-satisfaction.png" alt="Client Satisfaction">
                     <h3>Client Satisfaction</h3>
                     <p class="card-text">Our ultimate goal is your satisfaction. We build trust and become your trusted
@@ -212,7 +248,7 @@
             <div class="row">
                 <div class="col-12 position-relative">
 
-                    <h2 class="text-center">OUR PARTNERS</h2>
+                    <h2 class="text-center" data-aos="zoom-in-up">OUR PARTNERS</h2>
             <div class="d-flex">
                 
                         <article class="partners-slider carousel " data-flickity='{ "autoPlay": true }'>
@@ -270,17 +306,33 @@
     <!-- GSAP -->
     <script>
         gsap.registerPlugin(MotionPathPlugin);
+
+
+        // Menu -- Overlay
+
+        /* Open */
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+  document.body.style.cssText = "   overflow-y: hidden;"
+}
+
+/* Close */
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+  document.body.style.cssText = "   overflow-y: auto;"
+}
     </script>
 
     <script>
         const zoomElement = document.querySelector(".trevanta-overlay");
+        const welcomeText = document.querySelector(".hero-welcome");
 let zoom = 1;
 const ZOOM_SPEED = 0.1;
 const Opacity_SPEED = 0.01;
 let opacity = 1;
 
 document.addEventListener("wheel", function (e) {
-  
+    
   if (e.deltaY > 0) {
 
     zoomElement.style.transform = `scale(${(zoom += ZOOM_SPEED)})`;
@@ -290,13 +342,23 @@ document.addEventListener("wheel", function (e) {
           document.body.classList.add("disabled");
         }
     else{
+       
         document.body.classList.remove("disabled");
+        zoomElement.remove();
+
+        welcomeText.style.transform = `translateY(0px)`
+
+
+
     }
 
   } 
    
 });
     </script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
