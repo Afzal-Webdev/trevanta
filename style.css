@@ -393,13 +393,95 @@ text-transform: capitalize;
 .service-card {
     padding: 81px 20px 39px;
     width: 264px;
+    /* border: 2px solid white; */
+    border-style: dashed;
+    border-radius: 8px;
+    position: relative;
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+
+}
+/* .service-card:hover{
+    transform: rotate(5deg);
+} */
+
+.service-card::before{
+
+
+    content: '';
+    height: 100%;
+    width: 100%;
     border: 2px solid white;
     border-style: dashed;
     border-radius: 8px;
     position: relative;
+    display: block;
+    padding: 81px 20px 39px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+.service-card:hover::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    border: 2px solid white;
+    border-style: dashed;
+    border-radius: 8px;
+    position: relative;
+    display: block;
+    padding: 81px 20px 39px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+    /* opacity: 1; */
+    transform: rotate(3deg);
 
 }
 
+
+
+.service-card::after{
+
+
+    content: '';
+    height: 100%;
+    width: 100%;
+    border: 2px solid white;
+    border-style: dashed;
+    border-radius: 8px;
+    position: relative;
+    display: block;
+    padding: 81px 20px 39px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+.service-card:hover::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    border: 2px solid white;
+    border-style: dashed;
+    border-radius: 8px;
+    position: relative;
+    display: block;
+    padding: 81px 20px 39px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+    opacity: 1;
+    transform: rotate(-3deg);
+
+}
 .service-card .card {
     height: 228px;
     display: flex;
@@ -414,6 +496,7 @@ text-transform: capitalize;
     position: absolute;
     top: -100px;
     left: 0px;
+    z-index: 2;
 }
 
 .service-card h3 {
@@ -885,3 +968,139 @@ body{
   .disabled {
     overflow-y: hidden;
   }  
+
+
+/* ************************************************************************************************ */
+  /* About us Page */
+
+.about-us-hero{
+    background-image: url(images/about-hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 898px;
+}
+
+.about-us-hero h1{
+    padding-block: 210px 67px;
+
+    font-family: var(--primary-font-family);
+    color: var(--primary-text-color);
+font-size: 60px;
+font-weight: 700;
+line-height: 69px;
+letter-spacing: 0em;
+text-align: center;
+}
+
+.about-us-hero p{
+    font-family: var(--primary-font-family);
+    color: var(--primary-text-color);
+font-size: 28px;
+font-weight: 400;
+line-height: 32px;
+letter-spacing: 0em;
+text-align: center;
+max-width: 1100px;
+margin-inline: auto;
+}
+
+.about-us-projects{
+    padding: 235px 76px 94px 95px;
+    background-image: url(images/eco-portal.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+.projects-by-trevanta{
+    justify-content: space-between;
+
+}
+.project-desc h3{
+    font-family: var(--primary-font-family);
+    color: var(--primary-text-color);
+        font-size: 30px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    margin-bottom: 36px;
+}
+.projects-by-trevanta .project-desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 326px;
+}
+.project-social-links{
+    display: flex;
+    justify-content: space-between;
+    max-width: 210px;
+    width: 100%;
+
+}
+
+.about-ceo-msg{
+    padding: 192px 118px 304px 135px;
+    background-image: url(images/about-us-bottom.png);
+    background-position: right bottom;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.ceo-msg-cnt{
+    padding-left: 4rem;
+}
+.ceo-msg-cnt .about-txt{    
+    font-family: var(--primary-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-block: 75px 60px;
+
+    
+}
+
+.ceo-msg-cnt .name-designation .name{    
+    font-family: var(--primary-font-family);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--primary-color);
+    
+}
+.ceo-msg-cnt  .name-designation .designation{    
+    font-family: var(--primary-font-family);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--primary-text-color);
+    
+}
+
+.ceo-img-wrapper{
+    position: relative;
+    display: block;
+}
+
+.ceo-img-wrapper::before{
+content: '';
+height: 485px;
+width: 299px;
+border: 3px solid var(--primary-color);
+position: absolute;
+left: -42px;
+top: -29px;
+z-index: -1;
+
+}
+
+
+
