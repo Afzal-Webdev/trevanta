@@ -16,13 +16,21 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-       <!-- AOS -->
+    <!-- AOS -->
 
-       <link rel="stylesheet" href="packages/aos.css">
-       <script src="packages/aos.js"></script>
+    <link rel="stylesheet" href="packages/aos.css">
+    <script src="packages/aos.js"></script>
     <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MotionPathPlugin.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MotionPathPlugin.min.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <title></title>
 </head>
 
@@ -55,71 +63,73 @@
 
 
         <!-- The overlay -->
-<div id="myNav" class="overlay">
+        <div id="myNav" class="overlay">
 
-    <!-- Button to close the overlay navigation -->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  
-    <!-- Overlay content -->
-    <div class="overlay-content">
-      <a href="#">Home</a>
-      <a href="#">About us</a>
-      <a href="#">Services</a>
-      <a href="#">Careers</a>
-      <a href="#">Blogs</a>
-      <a href="#">Contact us</a>
-      <!-- <div class="nav-first-svg"></div>
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="#">Home</a>
+                <a href="#">About us</a>
+                <a href="#">Services</a>
+                <a href="#">Careers</a>
+                <a href="#">Blogs</a>
+                <a href="#">Contact us</a>
+                <!-- <div class="nav-first-svg"></div>
       <div class="nav-second-svg"></div> -->
 
-    
-    </div>
-   
-      
 
-        
+            </div>
 
-    
-  
-  </div>
-  
-        
+
+
+
+
+
+
+        </div>
+
+
 
     </section>
     <section class="hero-section">
         <div class="video-background">
             <!-- The video container -->
             <div class="video-background__inner">
-                <video autoplay loop muted="true"
-                preload="metadata" class="video-background__video" src="sample.mp4">...</video>
+                <video autoplay loop muted="true" preload="metadata" class="video-background__video"
+                    src="sample.mp4">...</video>
                 <!-- <iframe class="video-background__video" src="https://archive.org/embed/SampleVideo1280x7201mb" width="640" height="480" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe> -->
 
-               
+
             </div>
-        
+
             <!-- The content -->
             <div class="video-background__content">
                 <section class="hero-wrapper">
 
-             
+
                     <h2 class="hero-welcome">WELCOME</h2>
                     <h3 class="v-trevanta d-flex flex-column">WE ARE TREVANTA</h3>
-                    <article>
-                        <h1 class="hero-main-txt">Costumize Solutions to transform digitization for the new age of technology</h1>
-                        <a href="#" class="link">Know More</a>
+                    <article class="hero-text-section">
+                        <h1 class="hero-main-txt">Costumize Solutions to transform digitization for the new age of
+                            technology</h1>
+                        <img src="images/trevanta-hero-logo.png" alt="Trevanta Logo" class="trevanta-hero-logo">
+                        <a href="#" class="link hero-know-more">Know More</a>
                     </article>
 
                 </section>
             </div>
 
-            <!-- <div class="trevanta-overlay">
+            <div class="trevanta-overlay">
                 <h1>Trevanta</h1>
-              </div> -->
+            </div>
         </div>
         <div class="container d-none">
             <div class="row">
                 <div class="col-12">
 
-                   
+
                 </div>
             </div>
         </div>
@@ -128,15 +138,16 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-4 left-img" data-aos="fade-right">
-                    <img src="images/about.png" alt=""  >
+                <div class="col-4 left-img" data-aos="fade-right"  data-aos-offset="300">
+                    <img src="images/about.png" alt="">
                 </div>
                 <div class="col-6">
                     <h2>ABOUT US</h2>
-                    
-                    
-                    
-                  
+                    <div class="fake-underline"><img src="images/underline.png" alt="Underline"></div>
+
+
+
+
                     <article class="about-us-article">
                         <p class="nugget">" Redefining the Future with <span>Creativity</span>, <span>Passion</span>,
                             and <span>Integrity</span>"
@@ -162,7 +173,7 @@
         <div class="container">
             <div class="col-md-12">
                 <h2 data-aos="zoom-in-up">OUR PROFESSIONAL SERVICES</h2>
-                <article class="services-cards d-flex justify-center" data-aos="fade-right">
+                <article class="services-cards d-flex justify-center" data-aos="fade-right" data-aos-offset="200">
 
                     <div class="service-card">
                         <img src="images/it-consulting.png" alt="IT Consulting Services">
@@ -249,18 +260,20 @@
                 <div class="col-12 position-relative">
 
                     <h2 class="text-center" data-aos="zoom-in-up">OUR PARTNERS</h2>
-            <div class="d-flex">
-                
+                    <div class="d-flex">
+
                         <article class="partners-slider carousel " data-flickity='{ "autoPlay": true }'>
-                            <img src="images/partners-1.png" class="carousel-cell" alt="Partners of  Trevanat Technology">
-                            <img src="images/partners-1.png" class="carousel-cell" alt="Partners of  Trevanat Technology">
+                            <img src="images/partners-1.png" class="carousel-cell"
+                                alt="Partners of  Trevanat Technology">
+                            <img src="images/partners-1.png" class="carousel-cell"
+                                alt="Partners of  Trevanat Technology">
                         </article>
-                
-                
+
+
                         <article class="partners-intro  position-absolute">
                             <img src="images/partners-4Dee-technologies.png" alt="4Dee Technologies">
                         </article>
-            </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -301,7 +314,7 @@
 
 
     <script src="bootstrap/bootstrap.min.js"></script>
-     <script src="packages/flickity-min.css"></script>  
+    <script src="packages/flickity-min.css"></script>
     <script src="packages/flickity-min.js"></script>
     <!-- GSAP -->
     <script>
@@ -311,19 +324,19 @@
         // Menu -- Overlay
 
         /* Open */
-function openNav() {
-  document.getElementById("myNav").style.height = "100%";
-  document.body.style.cssText = "   overflow-y: hidden;"
-}
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+            document.body.style.cssText = "   overflow-y: hidden;"
+        }
 
-/* Close */
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-  document.body.style.cssText = "   overflow-y: auto;"
-}
+        /* Close */
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+            document.body.style.cssText = "   overflow-y: auto;"
+        }
     </script>
 
-    <script>
+    <!-- <script>
         const zoomElement = document.querySelector(".trevanta-overlay");
         const welcomeText = document.querySelector(".hero-welcome");
 let zoom = 1;
@@ -355,10 +368,71 @@ document.addEventListener("wheel", function (e) {
   } 
    
 });
-    </script>
+    </script> -->
     <script>
         AOS.init();
-      </script>
+    </script>
+
+
+    <script>
+        // Create a new GSAP timeline
+        const timeline = gsap.timeline();
+
+        // Target the overlay element
+        const overlay = document.querySelector('.trevanta-overlay');
+        const trevantaLogo = document.querySelector('.trevanta-hero-logo');
+        const mainText = document.querySelector('.hero-main-txt');
+        const knowMore = document.querySelector('.hero-know-more');
+        const verticalText = document.querySelector('.v-trevanta');
+        const welcomeText = document.querySelector('.hero-welcome');
+
+
+        // Animation sequence
+        const hero_animation = timeline
+            .fromTo(overlay, { scale: 1 }, { scale: 3, opacity: 0, duration: 3 ,ease: Sine.easeInOut})
+            .fromTo(trevantaLogo, { opacity: 0, }, { opacity: 1, duration: 0.5 })
+            .fromTo(mainText, { scale: 0, transformOrigin: 'top left' }, { scale: 1, duration: 0.5 },">0")
+            .fromTo(knowMore, { scale: 0, transformOrigin: 'center center' }, { scale: 1, duration: 0.5 },"<0.5")
+            .fromTo(welcomeText, { opacity: 0, y: '-80%' }, { opacity: 1, y: '0%', duration: 0.5, ease: "back", }, "<0.10")
+            .fromTo(verticalText, { opacity: 0, scale: 1.2 }, { opacity: 1, scale: 1, duration: 0.5, ease: Sine.easeInOut },"<0.15")
+            .fromTo(verticalText, { scale: 1.05 }, { scale: 1, duration: 0.5, ease: Sine.easeInOut });
+
+
+        // Play the timeline
+        timeline.play();
+
+
+        // Set the onComplete callback
+        hero_animation.eventCallback('onComplete', () => {
+            // Remove the element from the DOM
+            overlay.parentNode.removeChild(overlay);
+
+        });
+
+        // Section 2 Animations
+
+
+
+
+        gsap.registerPlugin(ScrollTrigger)
+
+gsap.from(".fake-underline", {
+  duration:3, x:"100vw", rotation:270, ease:"linear", 
+    scrollTrigger: {
+      trigger:".fake-underline",
+    //   markers:true,
+      start:"top 75%", //when top of herman passes 75% viewport height
+      end:"bottom 25%", //when bottom of herman passes 25% viewport height
+      
+           //events: onEnter onLeave onEnterBack onLeaveBack
+      toggleActions:"restart complete reverse reset"
+          //options: play, pause, resume, reset, restart, complete, reverse,none
+    }
+}) 
+
+
+
+    </script>
 </body>
 
 </html>

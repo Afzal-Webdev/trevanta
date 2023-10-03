@@ -144,6 +144,7 @@ table {
 
 body {
     background-color: var(--global-bg-color);
+    overflow-x: hidden;
 }
 
 
@@ -217,11 +218,21 @@ section .container {
 }
 
 .about-us-section h2 {
+    /* margin-bottom: 75px; */
+    text-decoration: none;
+}
+.fake-underline{
+    transform: translateY(-11px);
     margin-bottom: 75px;
+
 }
 
 .about-us-section .container .row {
     gap: 50px;
+}
+
+.hero-section .link{
+    margin-top: 0%;
 }
 
 :is(.about-us-article, .hero-section) .link {
@@ -236,7 +247,7 @@ section .container {
     text-decoration: none;
     display: inline-block;
 
-    margin-top: 75px;
+
 
     font-family: var( --primary-font-family);
     font-size: 20px;
@@ -252,6 +263,9 @@ section .container {
 
 }
 
+.about-us-article .link{
+    margin-top: 75px;
+}
 
 :is(.about-us-article, .hero-section) .link::before {
     content: "";
@@ -766,13 +780,25 @@ footer {
     font-weight: 700;
     line-height: 57px;
     letter-spacing: 0em;
-    text-align: left;
+ 
     color: #FFFFFF;
+ 
+     
+}
 
+.hero-wrapper>.hero-text-section{
     max-width: 827px;
-    width: 100%;
+    width: 100%; 
+}
 
+.hero-main-txt__animated{
+    width: 100%; 
+    transform: scale(1);
+}
 
+.trevanta-hero-logo{
+    display: block;
+    margin-inline: auto;
 }
 
 .v-trevanta {
