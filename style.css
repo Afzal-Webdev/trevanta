@@ -1344,6 +1344,7 @@ body {
     .partners-intro {height: unset;}
     .partners-intro > img{width: 100%;padding: 3rem 2rem;}
     .our-partners{padding-inline:30px ;}
+    .about-us-section .left-img{width: 50%;}
        
 }
 
@@ -1359,6 +1360,7 @@ body {
     .v-trevanta{
         writing-mode: unset;
         display: block;
+        padding: 8px 12px;
     }
     .hero-welcome{
         line-height: 60px;
@@ -1394,8 +1396,11 @@ body {
     .partners-intro > img{padding: 2rem 1.5rem;}
     .partners-slider {max-height: 200px;}
     .partners-slider .carousel-cell{height: 200px;}
-    .flickity-prev-next-button.next{scale: 0.7;}
+    .flickity-prev-next-button.next,.flickity-prev-next-button.previous{scale: 0.7;}
     .our-partners h2{margin-bottom: 60px;}
+
+    .footer-nav ul{gap: 15px;flex-wrap: wrap;}
+    .why-card h3{font-size: 20px;line-height: 1.3rem;margin-bottom: 12px;}
  
 }
 
