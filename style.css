@@ -1332,24 +1332,56 @@ body {
 
     .header-navbar .social-links{display: none;}
     .header-nav .navbar-logo{margin-right: auto;}
+
+    .nav-toggle-btn{scale: 0.7;}
        
 }
 
 
 @media screen and (max-width:440px){
+
+    .hero-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-welcome{
+        writing-mode: unset;
+    }
+    .v-trevanta{
+        writing-mode: unset;
+        display: block;
+    }
     .hero-welcome{
         line-height: 60px;
     }
 
     .hero-wrapper{
         height: auto;
-        margin-block:    80px 150px ;
+        /* margin-block:    80px 150px ; */
+        margin-block: 0px;
     }
 
+    .hero-text-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    
+    }
+   
     .hero-text-section>img{
         height: 150px;
         margin-bottom: 1rem;
     }
+
+    .video-background__content{
+        justify-content: unset;
+        padding-top: 5rem;
+    }
+
+    .nav-toggle-btn{scale: 0.5;}
+    .header-navbar{padding-block:10px;height: 60px;}
  
 }
 
