@@ -1345,11 +1345,15 @@ body {
     .partners-intro > img{width: 100%;padding: 3rem 2rem;}
     .our-partners{padding-inline:30px ;}
     .about-us-section .left-img{width: 50%;}
+    .separation img{display: none;}
+    .footer-nav ul{gap: 15px;flex-wrap: wrap;}
        
 }
 
 
 @media screen and (max-width:440px){
+
+ 
 
     .hero-wrapper{display: flex;
         flex-direction: column;
@@ -1399,9 +1403,9 @@ body {
     .flickity-prev-next-button.next,.flickity-prev-next-button.previous{scale: 0.7;}
     .our-partners h2{margin-bottom: 60px;}
 
-    .footer-nav ul{gap: 15px;flex-wrap: wrap;}
+   
     .why-card h3{font-size: 20px;line-height: 1.3rem;margin-bottom: 12px;}
- 
+    .professional-services-section h2{font-size: 25px;}
 }
 
 
