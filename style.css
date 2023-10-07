@@ -688,7 +688,7 @@ footer {
 }
 
 .header-navbar {
-    padding-block: 29px;
+    padding-block: 10px;
 
 }
 .header-navbar .social-links{display: flex;}
@@ -790,10 +790,11 @@ footer {
     position: absolute;
 }
 
-/* .hero-section {
-    height: 792px;
+.hero-section {
+    height: calc(100vh - 97px);
+    max-height:calc(100vh - 97px);
 
-} */
+}
 
 .hero-welcome {
     writing-mode: vertical-rl;
@@ -862,18 +863,18 @@ footer {
 }
 
 .hero-wrapper {
-    max-height: 477px;
+    /* max-height: 477px; */
     display: flex;
     /* padding-left: 152px; */
     width: 100%;
-    margin-block: 80px 235px;
-    max-width: 1050px;
+    /* margin-block: 80px 235px; */
+    /* max-width: 1050px; */
 }
 
 
 .hero-section {
     width: 100%;
-    height: 792px;
+    /* height: 792px; */
 
 }
 
@@ -1357,7 +1358,10 @@ body {
 
 
     .projects-by-trevanta{justify-content: space-around;}
-       
+    .why-choose-us .sub-section{flex-direction: column;}
+    .why-choose-us .left{height: auto;}
+    .why-choose-us .right{margin-inline: auto;} 
+    .left .why-card{margin-bottom: 4rem;}
 }
 
 

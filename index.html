@@ -69,11 +69,11 @@
 
             <!-- Overlay content -->
             <div class="overlay-content">
-                <a href="#">Home</a>
-                <a href="#">About us</a>
-                <a href="#">Services</a>
-                <a href="#">Careers</a>
-                <a href="#">Blogs</a>
+                <a href="index.html">Home</a>
+                <a href="about-trevanta.html">About us</a>
+                <a href="services.html">Services</a>
+                <a href="careers.html">Careers</a>
+                <a href="blog.html">Blogs</a>
                 <a href="#">Contact us</a>
                 <!-- <div class="nav-first-svg"></div>
       <div class="nav-second-svg"></div> -->
@@ -335,39 +335,7 @@
         }
     </script>
 
-    <!-- <script>
-        const zoomElement = document.querySelector(".trevanta-overlay");
-        const welcomeText = document.querySelector(".hero-welcome");
-let zoom = 1;
-const ZOOM_SPEED = 0.1;
-const Opacity_SPEED = 0.01;
-let opacity = 1;
 
-document.addEventListener("wheel", function (e) {
-    
-  if (e.deltaY > 0) {
-
-    zoomElement.style.transform = `scale(${(zoom += ZOOM_SPEED)})`;
-    opacity -= Opacity_SPEED;
-    zoomElement.style.opacity = opacity;
-    if (opacity >= 0) {
-          document.body.classList.add("disabled");
-        }
-    else{
-       
-        document.body.classList.remove("disabled");
-        zoomElement.remove();
-
-        welcomeText.style.transform = `translateY(0px)`
-
-
-
-    }
-
-  } 
-   
-});
-    </script> -->
     <script>
         AOS.init();
     </script>
