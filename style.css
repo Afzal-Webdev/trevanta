@@ -1362,6 +1362,7 @@ body {
     .why-choose-us .left{height: auto;}
     .why-choose-us .right{margin-inline: auto;} 
     .left .why-card{margin-bottom: 4rem;}
+    .fake-underline>img{width: 40%;}
 }
 
 
