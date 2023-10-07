@@ -24,7 +24,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MotionPathPlugin.min.js"></script>
 
-    
+
     <title></title>
 </head>
 
@@ -80,19 +80,44 @@
 
     </section>
 
-    <section class="about-us-hero">
-        <div class="container">
-            <h1>ABOUT US</h1>
-            <p>Trevanta is a Dubai-based provider of IT solutions working on projects spanning up to 20 different
-                sectors. Our areas of expertise include improving user experiences through creative design,
-                incorporating new technology into the creation of websites and applications, and more.</p>
+    <section class="hero-section">
+        <div class="video-background">
+            <!-- The video container -->
+            <div class="video-background__inner">
+                <video autoplay loop muted="true" preload="metadata" class="video-background__video"
+                    src="sample.mp4"></video>
+                <!-- <iframe class="video-background__video" src="https://archive.org/embed/SampleVideo1280x7201mb" width="640" height="480" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe> -->
+            </div>
+
+            <!-- The content -->
+            <div class="video-background__content">
+                <section class="about-us-hero">
+                
+                        <h1 class="">ABOUT US</h1>
+                        <p class="first-para">Trevanta is a Dubai-based provider of IT solutions working on projects
+                            spanning up to 20 different
+                            sectors. Our areas of expertise include improving user experiences through creative design,
+                            incorporating new technology into the creation of websites and applications, and more.</p>
+                    
+                
+
+                </section>
+            </div>
+
+            <div class="trevanta-overlay">
+                Trevanta
+            </div>
         </div>
+
     </section>
+
+
     <section class="about-us-projects">
 
         <div class="container">
             <section class="d-flex flex-wrap projects-by-trevanta">
-                <article class="project-desc" data-aos="fade-left" data-aos-duration="500"  data-aos-offset="400"   data-aos-delay="600" >
+                <article class="project-desc" data-aos="fade-left" data-aos-duration="500" data-aos-offset="400"
+                    data-aos-delay="600">
                     >
                     <img src="images/project-name.png" alt="Projects by Trevanta">
                     <h3>Project Name</h3>
@@ -220,7 +245,8 @@
                     </div>
                 </article>
 
-                <article class="project-desc" data-aos="fade-left" data-aos-duration="500" data-aos-offset="350"   data-aos-delay="450">
+                <article class="project-desc" data-aos="fade-left" data-aos-duration="500" data-aos-offset="350"
+                    data-aos-delay="450">
                     >
                     <img src="images/project-excluvio.png" alt="Projects by Trevanta">
                     <h3>Excluvio</h3>
@@ -354,7 +380,8 @@
                     </div>
                 </article>
 
-                <article class="project-desc" data-aos="fade-left" data-aos-duration="500" data-aos-offset="300"   data-aos-delay="200" >
+                <article class="project-desc" data-aos="fade-left" data-aos-duration="500" data-aos-offset="300"
+                    data-aos-delay="200">
                     >
                     <img src="images/project-chain-homes.png" alt="Projects by Trevanta">
                     <h3>Chain Homes</h3>
@@ -489,7 +516,8 @@
                 </article>
 
 
-                <article class="project-desc" data-aos="fade-left" data-aos-duration="500" data-aos-offset="200"   data-aos-delay="50" >
+                <article class="project-desc" data-aos="fade-left" data-aos-duration="500" data-aos-offset="200"
+                    data-aos-delay="50">
                     >
                     <img src="images/project-red-change.png" alt="Projects by Trevanta">
                     <h3>Chain Homes</h3>
@@ -631,14 +659,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-4">
-                    <div class="ceo-img-wrapper"  data-aos="fade-right" data-aos-offset="300"><img src="images/Trevanta-CEO.png" alt="Trevanta CEO"
-                            class="ceo-photo"></div>
+                    <div class="ceo-img-wrapper" data-aos="fade-right" data-aos-offset="300"><img
+                            src="images/Trevanta-CEO.png" alt="Trevanta CEO" class="ceo-photo"></div>
                 </div>
                 <div class="col-8 ceo-msg-cnt">
-                    <h2 data-aos="fade-down"
-                    data-aos-easing="linear"
-                    data-aos-duration="500" data-aos-offset="400" >CEO MESSAGE</h2>
-                    <p class="about-txt" data-aos="zoom-out" data-aos-offset="200" >‘’Trevanta enables organizations to experience extraordinary growth, which is
+                    <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500" data-aos-offset="400">CEO
+                        MESSAGE</h2>
+                    <p class="about-txt" data-aos="zoom-out" data-aos-offset="200">‘’Trevanta enables organizations to
+                        experience extraordinary growth, which is
                         my ultimate goal. We go above and beyond client expectations as a successful B2B business to
                         improve their lives. Seeing our customers succeed makes us happy and motivates us to keep
                         pushing the envelope. Trevanta focuses on creating successful journeys that have an impact.’’
@@ -696,10 +724,54 @@
             document.getElementById("myNav").style.height = "0%";
             document.body.style.cssText = "   overflow-y: auto;"
         }
+
+
+
+
+        // Create a new GSAP timeline
+        const timeline = gsap.timeline();
+
+        // Target the overlay element
+        const overlay = document.querySelector('.trevanta-overlay');
+        const heading = document.querySelector('.about-us-hero h1');
+        const firstPara = document.querySelector('.about-us-hero .first-para');
+ 
+
+
+
+        // Animation sequence
+        const hero_animation = timeline
+            .fromTo(overlay, { scale: 1 }, { scale: 3, opacity: 0, duration: 3, ease: Sine.easeInOut })
+            .fromTo(heading, { opacity: 0, }, { opacity: 1, duration: 0.5 })
+            .fromTo(firstPara, { scale: 0, transformOrigin: 'top center' }, { scale: 1, duration: 3 })
+            // .call(emptyFirstPara);
+
+
+        // function emptyFirstPara() {
+        //     firstPara.textContent = "";
+        //     firstPara.textContent = "We want to create a linked ecosystem powered by digitalization and cutting-edge technologies in order to  stand out in a variety of industries. This strategy will enhance overall offers by giving people and companies a common platform to consolidate their everyday lives and commercial activities. At the foundation of our mission is inclusivity, which makes these services available to everyone. We are also committed to enabling start-ups and small enterprises by reducing barriers in the competitive global market. We are carefully integrating artificial intelligence as it becomes more popular to automate repetitive tasks and improve user experiences. By doing this, we may provide a competitive advantage and accommodate various industry-specific preferences and needs. At Trevanta, we promote a client-centered culture and assemble a team of highly skilled individuals to maximize potential and achievement. To assure your success inthe digital era, our startup mentality thrives on innovation, providing cutting-edge solutions, and utilizing developing technologies. Let's go off on an extraordinary digital journey together, where Trevanta's global reach and client-centered approach will ensure your success in the online world.";
+        //     gsap.fromTo(firstPara, { opacity:0 }, { opacity: 1, duration: 3 });
+        // }
+
+
+
+
+        // Play the timeline
+        timeline.play();
+
+
+        // Set the onComplete callback
+        hero_animation.eventCallback('onComplete', () => {
+            // Remove the element from the DOM
+            overlay.parentNode.removeChild(overlay);
+
+        });
+
+   
     </script>
-        <script>
-            AOS.init();
-        </script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

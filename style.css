@@ -1029,6 +1029,8 @@ body {
     font-weight: 700;
     line-height: 58px;
     letter-spacing: -0.025em;
+
+    z-index: 9;
     
 }
 
@@ -1049,15 +1051,13 @@ body {
 /* About us Page */
 
 .about-us-hero {
-    background-image: url(images/about-hero-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 898px;
+
+    
 }
 
 .about-us-hero h1 {
-    padding-block: 210px 67px;
+    /* padding-block: 210px 67px; */
+    padding-block:3rem 2rem ;
 
     font-family: var(--primary-font-family);
     color: var(--primary-text-color);
@@ -1079,6 +1079,8 @@ body {
     max-width: 1100px;
     margin-inline: auto;
 }
+.about-us-hero  .first-para{padding-inline:2rem ;}
+
 
 .about-us-projects {
     padding: 235px 76px 94px 95px;
@@ -1363,6 +1365,9 @@ body {
     .why-choose-us .right{margin-inline: auto;} 
     .left .why-card{margin-bottom: 4rem;}
     .fake-underline>img{width: 40%;}
+    .why-choose-us h2{margin-bottom: 3rem;}
+    .ceo-msg-cnt{padding-left:0px;}
+    .ceo-img-wrapper > img{max-width: 323px;}
 }
 
 
@@ -1417,6 +1422,30 @@ body {
    
     .why-card h3{font-size: 20px;line-height: 1.3rem;margin-bottom: 12px;}
     .professional-services-section h2{font-size: 25px;}
+
+    .trevanta-overlay {font-size: 3rem;}
+
+    :is(.about-us-article, .hero-section) .link{
+        padding: 14px 20px;
+        height: 56px;
+        font-size: 18px;
+    }
+
+    .why-choose-us h2{
+        margin-bottom: 2rem;
+    }
+
+    .ceo-img-wrapper::before{
+        max-width: 299px;
+        width: 100%;
+        left: calc(0% - 42px);
+    }
+}
+
+@media screen and (max-width:390px) {
+    .ceo-img-wrapper::before{display: none;}
+    .ceo-img-wrapper > img{width: 100%;}
+    
 }
 
 
