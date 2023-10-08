@@ -1191,7 +1191,18 @@ body {
 }
 
 
+.about-us-desc p{
+    padding-block: 4rem 2rem;
+    text-align: justify;
+    font-size: 28px;
+    max-width: 1050px;
+    margin-inline: auto;
+    line-height: 2rem;
 
+}
+.about-us-desc :is(p,div)::-webkit-scrollbar{
+    display: none;
+}
 /* Media Queries */
 
 @media screen and (max-width:1350px) {
@@ -1499,6 +1510,8 @@ body {
 
 @media screen and (max-width:440px) {
 
+
+    .about-us-desc p{font-size: 20px;}
 
     .name-designation .name{
         font-size: 22px;
