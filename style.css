@@ -1198,6 +1198,7 @@ body {
     max-width: 1050px;
     margin-inline: auto;
     line-height: 2rem;
+    overflow-y: hidden;
 
 }
 .about-us-desc :is(p,div)::-webkit-scrollbar{
