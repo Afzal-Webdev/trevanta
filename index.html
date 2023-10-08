@@ -21,7 +21,7 @@
     <!-- <link rel="stylesheet" href="packages/aos.css"> -->
     <!-- <script src="packages/aos.js"></script> -->
     <!-- GSAP -->
- 
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
         integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
@@ -109,7 +109,11 @@
 
 
                     <h2 class="hero-welcome">WELCOME</h2>
-                    <h3 class="v-trevanta d-flex "><p>WE</p> <p>ARE</p> <p>TREVANTA</p></h3>
+                    <h3 class="v-trevanta d-flex ">
+                        <p>WE</p>
+                        <p>ARE</p>
+                        <p>TREVANTA</p>
+                    </h3>
                     <article class="hero-text-section">
                         <h1 class="hero-main-txt">Costumize Solutions to transform digitization for the new age of
                             technology</h1>
@@ -121,7 +125,7 @@
             </div>
 
             <div class="trevanta-overlay">
-              Trevanta
+                Trevanta
             </div>
         </div>
         <div class="container d-none">
@@ -137,7 +141,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-4 left-img" data-aos="fade-right"  data-aos-offset="300">
+                <div class="col-4 left-img" data-aos="fade-right" data-aos-offset="300">
                     <img src="images/about.png" alt="">
                 </div>
                 <div class="col-6">
@@ -289,9 +293,9 @@
                             <p>2023 Trevanta. All rights reserved</p>
                             <ul class="d-flex justify-content-center">
                                 <li class="footer-nav-links"><a href="index.html" class="active">Home</a></li>
-                                <li class="footer-nav-links"><a href="about.html">About</a></li>
+                                <li class="footer-nav-links"><a href="about-trevanta.html">About</a></li>
                                 <li class="footer-nav-links"><a href="services.html">Services</a></li>
-                                <li class="footer-nav-links"><a href="career.html">Career</a></li>
+                                <li class="footer-nav-links"><a href="careers.html">Career</a></li>
                                 <li class="footer-nav-links"><a href="blog.html">Blog</a></li>
                                 <li class="footer-nav-links"><a href="contact-us.html">Contact</a></li>
                             </ul>
@@ -317,22 +321,10 @@
     <script src="packages/flickity-min.js"></script>
     <!-- GSAP -->
     <script>
-        gsap.registerPlugin(MotionPathPlugin);
 
 
         // Menu -- Overlay
 
-        /* Open */
-        function openNav() {
-            document.getElementById("myNav").style.height = "100%";
-            document.body.style.cssText = "   overflow-y: hidden;"
-        }
-
-        /* Close */
-        function closeNav() {
-            document.getElementById("myNav").style.height = "0%";
-            document.body.style.cssText = "   overflow-y: auto;"
-        }
     </script>
 
 
@@ -356,12 +348,12 @@
 
         // Animation sequence
         const hero_animation = timeline
-            .fromTo(overlay, { scale: 1 }, { scale: 3, opacity: 0, duration: 3 ,ease: Sine.easeInOut})
+            .fromTo(overlay, { scale: 1 }, { scale: 3, opacity: 0, duration: 3, ease: Sine.easeInOut })
             .fromTo(trevantaLogo, { opacity: 0, }, { opacity: 1, duration: 0.5 })
-            .fromTo(mainText, { scale: 0, transformOrigin: 'top left' }, { scale: 1, duration: 0.5 },">0")
-            .fromTo(knowMore, { scale: 0, transformOrigin: 'center center' }, { scale: 1, duration: 0.5 },"<0.5")
+            .fromTo(mainText, { scale: 0, transformOrigin: 'top left' }, { scale: 1, duration: 0.5 }, ">0")
+            .fromTo(knowMore, { scale: 0, transformOrigin: 'center center' }, { scale: 1, duration: 0.5 }, "<0.5")
             .fromTo(welcomeText, { opacity: 0, y: '-80%' }, { opacity: 1, y: '0%', duration: 0.5, ease: "back", }, "<0.10")
-            .fromTo(verticalText, { opacity: 0, scale: 1.2 }, { opacity: 1, scale: 1, duration: 0.5, ease: Sine.easeInOut },"<0.15")
+            .fromTo(verticalText, { opacity: 0, scale: 1.2 }, { opacity: 1, scale: 1, duration: 0.5, ease: Sine.easeInOut }, "<0.15")
             .fromTo(verticalText, { scale: 1.05 }, { scale: 1, duration: 0.5, ease: Sine.easeInOut });
 
 
@@ -383,19 +375,19 @@
 
         gsap.registerPlugin(ScrollTrigger)
 
-gsap.from(".fake-underline", {
-  duration:1, x:"100vw", rotation:270, ease:"linear", 
-    scrollTrigger: {
-      trigger:".fake-underline",
-    //   markers:true,
-      start:"top 75%", //when top of herman passes 75% viewport height
-      end:"bottom 25%", //when bottom of herman passes 25% viewport height
-      
-           //events: onEnter onLeave onEnterBack onLeaveBack
-      toggleActions:"restart complete reverse reset"
-          //options: play, pause, resume, reset, restart, complete, reverse,none
-    }
-}) 
+        gsap.from(".fake-underline", {
+            duration: 1, x: "100vw", rotation: 270, ease: "linear",
+            scrollTrigger: {
+                trigger: ".fake-underline",
+                //   markers:true,
+                start: "top 75%", //when top of herman passes 75% viewport height
+                end: "bottom 25%", //when bottom of herman passes 25% viewport height
+
+                //events: onEnter onLeave onEnterBack onLeaveBack
+                toggleActions: "restart complete reverse reset"
+                //options: play, pause, resume, reset, restart, complete, reverse,none
+            }
+        })
 
 
 
