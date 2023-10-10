@@ -180,6 +180,19 @@ section .container {
     width: 100%;
 }
 
+body.landing-page{
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
+ 
+    scroll-snap-type: y mandatory;
+
+}
+.sections{
+    scroll-snap-align: center;
+    background-color: var(--global-bg-color);
+    
+}
+
 /*----------------------------- About Us Section----------------------------- */
 
 .about-us-article .nugget {
@@ -210,6 +223,7 @@ section .container {
     background-image: url(images/about-us-bottom.png);
     background-position: bottom right;
     background-repeat: no-repeat;
+    background-color: var(--global-bg-color);
 }
 
 .about-us-section .left-img {
@@ -416,6 +430,7 @@ section .container {
 
 .professional-services-section {
     padding-block: 135px 113px;
+    background-color: var(--global-bg-color);
 }
 
 .professional-services-section h2 {
@@ -634,6 +649,7 @@ section .container {
     width: 100%;
     margin-inline: auto;
     padding-block: 135px 151px;
+    background-color: var(--global-bg-color);
 }
 
 /*---------------------------------- Footer------------------------------ */
@@ -760,6 +776,7 @@ footer {
 .our-partners {
     padding-block: 147px 193px;
     padding-inline: 80px;
+    background-color: var(--global-bg-color);
 }
 
 .our-partners h2 {
@@ -798,6 +815,7 @@ footer {
 .hero-section {
     height: calc(100vh - 97px);
     max-height: calc(100vh - 97px);
+    overflow-y: hidden;
 
 }
 
@@ -1512,7 +1530,7 @@ body {
 @media screen and (max-width:440px) {
 
 
-    .about-us-desc p{font-size: 20px;}
+    .about-us-desc p{font-size: 20px;line-height: 1.8rem;}
 
     .name-designation .name{
         font-size: 22px;
