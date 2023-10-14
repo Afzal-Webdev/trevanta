@@ -27,6 +27,8 @@
             integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+            <!-- Slick CSS -->
+            <link rel="stylesheet" href="packages/slick.css">
   
 
     <!-- AOS -->
@@ -87,11 +89,11 @@
             <!-- Overlay content -->
             <div class="overlay-content">
                 <a href="index.html">Home</a>
-                <a href="about-trevanta.html">About us</a>
+                <a class="active" href="about-trevanta.html">About us</a>
                 <a href="services.html">Services</a>
-                <a href="career.html">Careers</a>
+                <a href="careers.html">Careers</a>
                 <a href="blog.html">Blogs</a>
-                <a href="#">Contact us</a>
+                <a href="contact.html">Contact us</a>
                 <!-- <div class="nav-first-svg"></div>
       <div class="nav-second-svg"></div> -->
 
@@ -172,8 +174,8 @@
     <section class="about-us-projects sections" data-speed="1">
 
         <div class="container ">
-            <section id="projects-carousel" class="d-flex  projects-by-trevanta d-flex-between flex-wrap carousels ">
-
+            <section id="projects-carousel" class="d-flex  projects-by-trevanta d-flex-between flex-wrap carousels responsive">
+<!-- <div class="responsive"> -->
                 <article class="project-desc carousel-cell">
                     
                     <img src="images/ticks-travel.png" alt="Projects by Trevanta">
@@ -433,7 +435,6 @@
                     </div>
                 </article>
 
-
                 <article class="project-desc carousel-cell">
 
                     <img src="images/project-red-change.png" alt="Projects by Trevanta">
@@ -556,11 +557,6 @@
                         </a>
                     </div>
                 </article>
-
-
-
-
-
                 
                 <article class="project-desc carousel-cell">
 
@@ -636,7 +632,6 @@
                         </div>
                    
                 </article>
-
 
                 <article class="project-desc carousel-cell">
 
@@ -738,100 +733,19 @@
                 </article>
 
                 <article class="project-desc carousel-cell">
-
                     <img src="images/CoinBazaar.png" alt="Projects by Trevanta">
                     <h3>Coin Bazaar</h3>
 
                     <div class="project-social-links">
                         <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                                <g filter="url(#filter0_bd_796_1923)">
-                                <circle cx="25.5" cy="25" r="24.5" stroke="url(#paint0_linear_796_1923)" shape-rendering="crispEdges"/>
-                                </g>
-                                <path d="M30.4123 17.7812H33.0312L27.3098 24.3204L34.0405 33.2188H28.7696L24.6419 27.822L19.9188 33.2188H17.2984L23.418 26.2244L16.9619 17.7812H22.365L26.0962 22.7141L30.4107 17.7812H30.4123ZM29.4932 31.6513H30.9443L21.5773 19.2664H20.0201L29.4932 31.6513Z" fill="#D85D36"/>
-                                <defs>
-                                <filter id="filter0_bd_796_1923" x="-49.5" y="-50" width="186" height="186" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="25"/>
-                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_796_1923"/>
-                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                <feOffset dx="46" dy="46"/>
-                                <feGaussianBlur stdDeviation="20"/>
-                                <feComposite in2="hardAlpha" operator="out"/>
-                                <feColorMatrix type="matrix" values="0 0 0 0 0.0173077 0 0 0 0 0.0865384 0 0 0 0 0.09 0 0 0 0.2 0"/>
-                                <feBlend mode="normal" in2="effect1_backgroundBlur_796_1923" result="effect2_dropShadow_796_1923"/>
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_796_1923" result="shape"/>
-                                </filter>
-                                <linearGradient id="paint0_linear_796_1923" x1="13.5556" y1="-18.0556" x2="53.1738" y2="36.5672" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="white"/>
-                                <stop offset="0.237864" stop-opacity="0"/>
-                                <stop offset="0.472362" stop-color="#D85D36"/>
-                                <stop offset="0.812781" stop-color="#D85D36"/>
-                                <stop offset="1" stop-color="#000749" stop-opacity="0"/>
-                                </linearGradient>
-                                </defs>
-                                </svg>
+                            <img src="Social-Icons/CoinBazaar-X.svg" alt="">
                         </a>
                         <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                                <g filter="url(#filter0_bd_796_1910)">
-                                <circle cx="25" cy="25" r="24.5" stroke="url(#paint0_linear_796_1910)" shape-rendering="crispEdges"/>
-                                </g>
-                                <path d="M25 16H21C18.2386 16 16 18.2386 16 21V29C16 31.7614 18.2386 34 21 34H29C31.7614 34 34 31.7614 34 29V21C34 18.2386 31.7614 16 29 16H25Z" stroke="#00A18B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M25 21C27.2091 21 29 22.7909 29 25C29 27.2091 27.2091 29 25 29C22.7909 29 21 27.2091 21 25C21 22.7909 22.7909 21 25 21Z" stroke="#00A18B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M30 21.5C30.8284 21.5 31.5 20.8284 31.5 20C31.5 19.1716 30.8284 18.5 30 18.5C29.1716 18.5 28.5 19.1716 28.5 20C28.5 20.8284 29.1716 21.5 30 21.5Z" fill="#00A18B"/>
-                                <defs>
-                                <filter id="filter0_bd_796_1910" x="-50" y="-50" width="186" height="186" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="25"/>
-                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_796_1910"/>
-                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                <feOffset dx="46" dy="46"/>
-                                <feGaussianBlur stdDeviation="20"/>
-                                <feComposite in2="hardAlpha" operator="out"/>
-                                <feColorMatrix type="matrix" values="0 0 0 0 0.0173077 0 0 0 0 0.0865384 0 0 0 0 0.09 0 0 0 0.2 0"/>
-                                <feBlend mode="normal" in2="effect1_backgroundBlur_796_1910" result="effect2_dropShadow_796_1910"/>
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_796_1910" result="shape"/>
-                                </filter>
-                                <linearGradient id="paint0_linear_796_1910" x1="13.0556" y1="-18.0556" x2="52.6738" y2="36.5672" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="white"/>
-                                <stop offset="0.237864" stop-opacity="0"/>
-                                <stop offset="0.472362" stop-color="#00A18B"/>
-                                <stop offset="0.812781" stop-color="#00A18B"/>
-                                <stop offset="1" stop-color="#000749" stop-opacity="0"/>
-                                </linearGradient>
-                                </defs>
-                                </svg>
+                            <img src="Social-Icons/CoinBazaar-Insta.svg" alt="">
                         </a>
     
                         <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                                <g filter="url(#filter0_bd_796_1917)">
-                                <circle cx="25" cy="25" r="24.5" stroke="url(#paint0_linear_796_1917)" shape-rendering="crispEdges"/>
-                                </g>
-                                <path d="M27.3337 26.7499H30.2503L31.417 22.0833H27.3337V19.7499C27.3337 18.5483 27.3337 17.4166 29.667 17.4166H31.417V13.4966C31.0367 13.4464 29.6005 13.3333 28.0838 13.3333C24.9163 13.3333 22.667 15.2664 22.667 18.8166V22.0833H19.167V26.7499H22.667V36.6666H27.3337V26.7499Z" fill="#00A18B"/>
-                                <defs>
-                                <filter id="filter0_bd_796_1917" x="-50" y="-50" width="186" height="186" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="25"/>
-                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_796_1917"/>
-                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                <feOffset dx="46" dy="46"/>
-                                <feGaussianBlur stdDeviation="20"/>
-                                <feComposite in2="hardAlpha" operator="out"/>
-                                <feColorMatrix type="matrix" values="0 0 0 0 0.0173077 0 0 0 0 0.0865384 0 0 0 0 0.09 0 0 0 0.2 0"/>
-                                <feBlend mode="normal" in2="effect1_backgroundBlur_796_1917" result="effect2_dropShadow_796_1917"/>
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_796_1917" result="shape"/>
-                                </filter>
-                                <linearGradient id="paint0_linear_796_1917" x1="13.0556" y1="-18.0556" x2="52.6738" y2="36.5672" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="white"/>
-                                <stop offset="0.237864" stop-opacity="0"/>
-                                <stop offset="0.472362" stop-color="#00A18B"/>
-                                <stop offset="0.812781" stop-color="#00A18B"/>
-                                <stop offset="1" stop-color="#000749" stop-opacity="0"/>
-                                </linearGradient>
-                                </defs>
-                                </svg>
+                            <img src="Social-Icons/CoinBazaar-Fb.svg" alt="">
                         </a>
                         </div>
 
@@ -840,11 +754,8 @@
                    
                    
                 </article>
-
-
-                
+    
                 <article class="project-desc carousel-cell">
-
                     <img src="images/LottoLuck.png" alt="Projects by Trevanta">
                     <h3>Lotto Luck</h3>
                     <div class="project-social-links">
@@ -855,10 +766,7 @@
                    
                 </article>
 
-
-                
                 <article class="project-desc carousel-cell">
-
                     <img src="images/NovaSet.png" alt="Projects by Trevanta">
                     <h3>Novasset</h3>
                     <div class="project-social-links">
@@ -867,9 +775,6 @@
                         <a href="#"><img src="Social-Icons/Novasset-Fb.svg" alt=""></a>
                     </div>  
                 </article>
-
-
-
                 
                 <article class="project-desc carousel-cell">
 
@@ -903,6 +808,8 @@
                         <a href="#"><img src="Social-Icons/TreePays-Fb.svg" alt=""></a>
                     </div> 
                 </article>
+
+<!-- </div> -->
             </section>
         </div>
 
@@ -911,11 +818,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-4">
-                    <div class="ceo-img-wrapper" data-aos="fade-right" data-aos-offset="300"><img
+                    <div class="ceo-img-wrapper" data-aos="fade-right" data-aos-offset="100"><img
                             src="images/Trevanta-CEO.png" alt="Trevanta CEO" class="ceo-photo"></div>
                 </div>
                 <div class="col-8 ceo-msg-cnt">
-                    <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500" data-aos-offset="400">CEO
+                    <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="200" data-aos-offset="200">CEO
                         MESSAGE</h2>
                     <p class="about-txt" data-aos="zoom-out" data-aos-offset="200">‘’Trevanta enables organizations to
                         experience extraordinary growth, which is
@@ -943,7 +850,7 @@
                                 <li class="footer-nav-links"><a href="index.html">Home</a></li>
                                 <li class="footer-nav-links"><a href="about-trevanta.html" class="active">About</a></li>
                                 <li class="footer-nav-links"><a href="services.html">Services</a></li>
-                                <li class="footer-nav-links"><a href="career.html">Career</a></li>
+                                <li class="footer-nav-links"><a href="careers.html">Career</a></li>
                                 <li class="footer-nav-links"><a href="blog.html">Blog</a></li>
                                 <li class="footer-nav-links"><a href="contact.html">Contact</a></li>
                             </ul>
@@ -1043,15 +950,16 @@
         AOS.init();
         /* Open */
         function openNav() {
-            document.getElementById("myNav").style.height = "100%";
+            document.getElementById("myNav").style.top = "0vh";
             document.body.style.cssText = "   overflow-y: hidden;"
         }
 
         /* Close */
         function closeNav() {
-            document.getElementById("myNav").style.height = "0%";
-            document.body.style.cssText = "   overflow-y: auto;"
+            document.getElementById("myNav").style.top= "-100vh";
+            document.body.style.cssText = "overflow-y: auto;"
         }
+        
     </script>
 
 =
@@ -1129,6 +1037,50 @@
 
 
 
+</script>
+
+<script>
+    
+    $('.responsive').slick({
+  dots: false,
+  infinite: true,
+  prevArrow: false,
+  nextArrow: false,
+  autoplay: true,
+    autoplaySpeed: 1000,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+		
 </script>
 
 

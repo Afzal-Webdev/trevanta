@@ -77,9 +77,9 @@
                 <a href="index.html">Home</a>
                 <a href="about-trevanta.html">About us</a>
                 <a href="services.html">Services</a>
-                <a href="careers.html">Careers</a>
+                <a class="active" href="careers.html">Careers</a>
                 <a href="blog.html">Blogs</a>
-                <a href="#">Contact us</a>
+                <a href="contact.html">Contact us</a>
                 <!-- <div class="nav-first-svg"></div>
       <div class="nav-second-svg"></div> -->
 
@@ -180,18 +180,20 @@
       </script>
 
 <script>
-    AOS.init();
-    /* Open */
-function openNav() {
-document.getElementById("myNav").style.height = "100%";
-document.body.style.cssText = "   overflow-y: hidden;"
-}
+  
+        AOS.init();
+        /* Open */
+        function openNav() {
+            document.getElementById("myNav").style.top = "0vh";
+            document.body.style.cssText = "   overflow-y: hidden;"
+        }
 
-/* Close */
-function closeNav() {
-document.getElementById("myNav").style.height = "0%";
-document.body.style.cssText = "   overflow-y: auto;"
-}
+        /* Close */
+        function closeNav() {
+            document.getElementById("myNav").style.top= "-100vh";
+            document.body.style.cssText = "overflow-y: auto;"
+        }
+
 </script>
 </body>
 </html>
