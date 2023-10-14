@@ -901,6 +901,7 @@ footer {
 .trevanta-hero-logo {
     display: block;
     margin-inline: auto;
+    visibility: hidden;
 }
 
 .v-trevanta {
