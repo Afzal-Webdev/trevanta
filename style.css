@@ -714,6 +714,7 @@ footer {
     border-bottom: 5px solid var(--primary-color);
     /* z-index: 1; */
     position: relative;
+    overflow: hidden;
 
 }
 
@@ -1166,6 +1167,7 @@ body {
 }
 .mission-vision{
     padding-block: 90px 0px;
+    background-color: var(--global-bg-color);
 }
 .mission-vision-boxes{
     gap: 20px;
