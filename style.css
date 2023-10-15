@@ -1590,7 +1590,7 @@ margin-right: 1.5rem;
 @media screen and (max-width:767px) {
     .nav-svg-group{display: none;}
     .hero-welcome {
-        font-size: 3rem
+        font-size: 3rem;
     }
 
     .slick-arrow{
