@@ -77,7 +77,7 @@
                 <a href="careers.html">Careers</a>
                 <a href="blog.html">Blogs</a>
                 <a href="contact.html">Contact us</a>
-                <a href="faq.html">FAQs</a>
+                <a hidden href="faq.html">FAQs</a>
                 <div class="nav-svg-group">
                     <div class="nav-first-svg"><img src="images/nav-first.png" alt=""></div>
                     <div class="nav-second-svg"><img src="images/nav-second.png" alt=""></div>
@@ -107,7 +107,7 @@
     <section class="services__list">
         <article class="service__list-item section">
             <div class="service__list-item__header">
-                <img  src="./images/it-consulting.png" alt="it consultant" />
+                <img data-aos="flip-left"  src="images/it-consulting.png" alt="it consultant" />
                 <h2 class="title">IT Consulting</h2>
             </div>
             <div  class="service__list-item__content paragraph">
@@ -149,7 +149,7 @@
         </article>
         <article class="service__list-item section">
             <div class="service__list-item__header">
-                <img  src="./images/software-dev.png" alt="it consultant" />
+                <img data-aos="flip-right" src="images/software-dev.png" alt="it consultant" />
                 <h2 class="title" >Software Development</h2>
             </div>
             <div  class="service__list-item__content paragraph">
@@ -181,7 +181,7 @@
         </article>
         <article class="service__list-item section">
             <div class="service__list-item__header">
-                <img data-aos="flip-left" src="./images/managed-it-services.png" alt="it consultant" />
+                <img data-aos="flip-left" src="images/managed-it-services.png" alt="it consultant" />
                 <h2  class="title" >IT Management Services</h2>
             </div>
             <div  class="service__list-item__content paragraph">
@@ -205,7 +205,7 @@
         </article>
         <article class="service__list-item section">
             <div class="service__list-item__header">
-                <img  src="./images/cyber-security.png" alt="it consultant" />
+                <img data-aos="flip-right" src="images/cyber-security.png" alt="it consultant" />
                 <h2  class="title">Cybersecurity</h2>
             </div>
             <div class="service__list-item__content paragraph">
@@ -297,8 +297,8 @@ sections.forEach((section) => {
 
   const slideInFromRight = gsap.timeline({
     defaults: {
-      duration: 0.8,
-      ease: "power3.out",
+      duration: 0.2,
+      ease: "power4.out",
     },
   });
 
@@ -309,8 +309,8 @@ sections.forEach((section) => {
 
   const slideInFromLeft = gsap.timeline({
     defaults: {
-      duration: 0.8,
-      ease: "power3.out",
+      duration: 0.4,
+      ease: "power4.out",
     },
   });
 
@@ -322,17 +322,19 @@ sections.forEach((section) => {
   ScrollTrigger.create({
     animation: slideInFromRight,
     trigger: section,
-    start: "top 80%", // Adjust the start position as per your requirement
-    end: "bottom 20%", // Adjust the end position as per your requirement
-    scrub: true,
+    start: "top 60%", // Adjust the start position as per your requirement
+    end: "20% 20%", // Adjust the end position as per your requirement
+    scrub: 2
+  
   });
 
   ScrollTrigger.create({
     animation: slideInFromLeft,
     trigger: section,
-    start: "top 80%", // Adjust the start position as per your requirement
-    end: "bottom 20%", // Adjust the end position as per your requirement
-    scrub: true,
+    start: "top 60%", // Adjust the start position as per your requirement
+    end: "20% 20%", // Adjust the end position as per your requirement
+    scrub: 2
+
   });
 });
 </script>
